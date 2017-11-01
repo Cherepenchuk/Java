@@ -1,16 +1,19 @@
 package xhe;
 
-public class Student extends Human {
+public class Student extends Human{
 	private int courseNumber;
 	private int recordBookNumber;
-	public Student(String name, int age, String sex, int courseNumber, int recordBookNumber) {
-		super(name, age, sex);
+	Human lastName;
+	
+	public Student(String name, String lastName, int age, String sex, int courseNumber, int recordBookNumber) {
+		super(name, lastName, age, sex);
 		this.courseNumber = courseNumber;
 		this.recordBookNumber = recordBookNumber;
 	}
-	public Student(String name, int age, String sex) {
-		super(name, age, sex);
+	public Student(String name, String lastName, int age, String sex) {
+		super(name, lastName, age, sex);
 	}
+
 	public int getCourseNumber() {
 		return courseNumber;
 	}
@@ -30,6 +33,14 @@ public class Student extends Human {
 	public String toString() {
 		return "Student " + super.toString()+ " courseNumber=" + courseNumber + ", recordBookNumber=" + recordBookNumber + "]";
 	}
-	
-
+//	public int compareTo (Object o) {//сортировка по фамилии
+//		Student anotherStudent = (Student) o;
+//		if (this.lastName.compareTo(anotherStudent.lastName) > 0 ) {
+//			return 1;
+//		}
+//		if (this.lastName.compareTo(anotherStudent.lastName) < 0 ) {
+//			return -1;
+//		}
+//		return 0;
+//	}
 }
