@@ -8,32 +8,39 @@ public class Main {
 //		Human hm = new Human("Yura", 20, "male");
 //		System.out.println(hm);
 //		hm.inf();
-		Student st = new Student ("Misha", 20,"male", 2, 1111);
+		Student studentOne = new Student("Maria", "Tuk", 18, "female", 2, 1111);
 //		System.out.println(st);
 //		st.inf();
 		
-		Student st1 = new Student ("Vova", 19,"male", 2, 1112);
-		Student st2 = new Student ("Masha", 18, "female", 1, 1113);
-		Student st3 = new Student ("Ira", 19, "female", 1, 1114);
-		Student st4 = new Student ("Gosha", 20, "male", 3, 1115);
-		Student st5 = new Student ("Vika", 21, "female", 3, 1116);
+		Student studentTwo = new Student ("Sasha", "Che", 20, "female", 3, 1122);
+		Student studentThree = new Student ("Vova", "Svoi", 19, "male", 2, 1123);
+		Student studentFour = new Student ("Ivan", "Dorn", 17, "male", 1, 2222);
+		Student studentFive = new Student ("Misha", "Cho", 18, "male", 2, 1125);
+		Student studentSix = new Student ("Alexey", "Abak", 19, "male", 2, 1126);
+		Student studentSeven = new Student ("Oleg", "Bedr", 18, "male", 1, 2232);
 		Group group = new Group (1);
 		
-		group.addStundent(st); //1
-		group.addStundent(st1); //2
-		group.addStundent(st2); //3
-		group.addStundent(st3); //4
-		group.addStundent(st4); //5
-		group.addStundent(st5); //6
-		group.addStundent(st3); //7
-		group.addStundent(st5); //8
-		group.addStundent(st1); //9
-		group.addStundent(st); //10
-		group.addStundent(st4); //11
+		group.addStundent(studentOne); //1
+		group.addStundent(studentTwo); //2
+		group.addStundent(studentThree); //3
+		group.addStundent(studentFour); //4
+		group.addStundent(studentFive); //5
+		group.addStundent(studentSix); //6
+		group.addStundent(studentSeven); //7
+		group.addStundent(studentFour); //8
+		group.addStundent(studentOne); //9
+//		group.addStundent(studentSix); //10
+//		group.addStundent(studentSeven); //11
+		
 		System.out.println(group);
+		System.out.println();
+		group.delStudent(0);
+		System.out.println(group);
+//		group.compareTo(group); // ???
 		} catch (MyException e) {
-			System.out.println("Ïåğåõâà÷åíî èñêëş÷åíèå : " + e);
+			System.out.println("ĞŸĞµÑ€ĞµÑ…Ğ²Ğ°Ñ‡ĞµĞ½Ğ¾ Ğ¸ÑĞºĞ»ÑÑ‡ĞµĞ½Ğ¸Ğµ : " + e);
 		} 	
+		
 
 	}
 
