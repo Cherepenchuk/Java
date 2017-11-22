@@ -1,5 +1,6 @@
 package xhe;
 
+<<<<<<< HEAD:HumanOne/src/xhe/Student.java
 import java.io.Serializable;
 
 public class Student extends Human implements Serializable{
@@ -7,6 +8,9 @@ public class Student extends Human implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+=======
+public class Student extends Human{
+>>>>>>> 1bf253b4df5d38e88f5f6b7eb4927444a7ffabaa:Human/src/xhe/Student.java
 	private int courseNumber;
 	private int recordBookNumber;
 	Human lastName;
@@ -39,6 +43,19 @@ public class Student extends Human implements Serializable{
 	public String toString() {
 		return "Student " + super.toString()+ " courseNumber=" + courseNumber + ", recordBookNumber=" + recordBookNumber + "]";
 	}
+<<<<<<< HEAD:HumanOne/src/xhe/Student.java
 	
+=======
+//	public int compareTo (Object o) {//сортировка по фамилии
+//		Student anotherStudent = (Student) o;
+//		if (this.lastName.compareTo(anotherStudent.lastName) > 0 ) {
+//			return 1;
+//		}
+//		if (this.lastName.compareTo(anotherStudent.lastName) < 0 ) {
+//			return -1;
+//		}
+//		return 0;
+//	}
+>>>>>>> 1bf253b4df5d38e88f5f6b7eb4927444a7ffabaa:Human/src/xhe/Student.java
 }
 
